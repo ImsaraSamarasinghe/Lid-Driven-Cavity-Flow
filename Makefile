@@ -14,6 +14,10 @@ LidDrivenCavity.o: LidDrivenCavity.cpp LidDrivenCavity.h SolverCG.h
 solver: LidDrivenCavity.o LidDrivenCavitySolver.o SolverCG.o
 	$(CXX) -o solver LidDrivenCavity.o LidDrivenCavitySolver.o SolverCG.o -lblas -lboost_program_options
 
+doc:
+	doxygen Doxyfile
+	
+
 
 
 
